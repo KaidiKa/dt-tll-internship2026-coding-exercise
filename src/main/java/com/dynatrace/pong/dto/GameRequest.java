@@ -19,7 +19,8 @@ public class GameRequest {
     @Min(value = 0, message = "Player score must be at least 0")
     private Integer player2Score;
 
-    public GameRequest() {}
+    public GameRequest() {
+    }
 
     public GameRequest(Long player1Id, Long player2Id, Integer player1Score, Integer player2Score) {
         this.player1Id = player1Id;
@@ -31,21 +32,30 @@ public class GameRequest {
     public Integer getPlayer1Score() {
         return player1Score;
     }
+
     public void setPlayer1Score(Integer player1Score) {
         this.player1Score = player1Score;
     }
+
     public Integer getPlayer2Score() {
         return player2Score;
     }
-    public void setPlayer2Score(Integer player2Score) {}
+
+    public void setPlayer2Score(Integer player2Score) {
+    }
+
     public Long getPlayer1Id() {
         return player1Id;
     }
+
     public void setPlayer1Id(Long player1Id) {
         this.player1Id = player1Id;
     }
+
     public Long getPlayer2Id() {
         return player2Id;
     }
-    public void setPlayer2Id(Long player2Id) {}
+
+    public void setPlayer2Id(Long player2Id) {
+    }
 }
